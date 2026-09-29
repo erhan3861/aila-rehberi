@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-LA Kullanım Rehberi</title>
+<meta name="description" content="AI-LA'yı ilk kez kullanacak öğretmen, öğrenci ve okul yöneticileri için ekranları adım adım anlatan rehber.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#icerik">İçeriğe geç</a>
+
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#" data-rol="baslarken">
+      <img src="img/aila_logo.png" alt="" onerror="this.remove()">
+      <span>Kullanım Rehberi</span>
+    </a>
+    <label class="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="ara" type="search" placeholder="Rehberde ara: görev, ders planı, sınıf..." autocomplete="off">
+    </label>
+    <button id="tema" class="icon-btn" title="Açık / koyu tema" aria-label="Tema değiştir">◐</button>
+    <button id="yazdir" class="icon-btn" title="Yazdır / PDF" aria-label="Yazdır">⎙</button>
+  </div>
+  <nav class="tabs" id="sekmeler" aria-label="Roller"></nav>
+</header>
+
+<div class="layout">
+  <aside class="toc" id="toc" aria-label="Bu bölümde"></aside>
+  <main id="icerik" tabindex="-1">
+    <section class="hero" id="hero"></section>
+    <div id="bolumler"></div>
+    <p id="bos" class="empty" hidden>Aramanızla eşleşen bölüm yok.</p>
+  </main>
+</div>
+
+<footer class="foot" id="foot"></footer>
+
+<div class="lightbox" id="lb" hidden>
+  <button class="lb-x" aria-label="Kapat">×</button>
+  <img alt="">
+  <p></p>
+</div>
+
+<script src="icerik.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
